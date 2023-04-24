@@ -1,0 +1,249 @@
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 24px;
+}
+
+.header {
+  margin-top: 0px;
+}
+
+.navContainer {
+  margin-top: 5px;
+  display: flex; ;
+  flex-direction: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 12px;
+}
+
+.headerLogo {
+  vertical-align: top;
+}
+
+.h1 {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1.125rem;
+  max-width: 1200px;
+}
+
+.divider {
+  width: 50%;
+  border-color: rgb(189, 98, 0);
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: rgb(189, 98, 0);
+  margin-top: 64px;
+  opacity: 0.25;
+}
+
+.nftBoxGrid {
+  width: 1200;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.navBoxGrid {
+  width: 1200px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap; 
+}
+
+.navBox {
+  border-radius: 22px;
+  border: 1px solid #d78800;
+  min-width: 200px;
+  margin: 7px;
+  height: square;
+  width: 20%;
+  padding: 40px;
+}
+
+.nftBox {
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  margin: 7px;
+  width: 30%;
+  min-height: 200px;
+  padding: 14px;
+}
+
+.optionSelectBox {
+  border-radius: 14px;
+  border: 1px solid #ff9d3cb8;
+  width: 60%;
+  min-height: 200px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.selectBoxTitle {
+  font-size: 1.75rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.selectBoxDescription {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0px;
+}
+
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nftBox {
+    width: 60%;
+    margin: 8px;
+    padding: 30;
+  }
+}
+
+/* beneath 800
+*/
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+  }
+  .nftBox {
+    width: 80%;
+    margin: 8px;
+    padding: 60;
+  }
+  .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+.tokenGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  width: 1600px;
+  max-width: 95vw;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.navTokenGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  width: 1600px;
+  max-width: 95vw;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.navTokenItem {
+  width: 35%;
+  height: 120px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  gap: 16px;
+}
+
+.tokenItem {
+  width: 35%;
+  height: 120px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  gap: 16px;
+}
+
+.tokenLabel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Second tokenLabel item */
+
+.tokenValue {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
+  .tokenItem {
+    width: 90%;
+    margin-top: 12px;
+  }
+}
+
+/* Screen less than 630, then hide .center */
+@media only screen and (max-width: 630px) {
+  .center {
+    display: none;
+  }
+}
+
+.spacerTop {
+  margin-top: 16px;
+}
+
+.bigSpacerTop {
+  margin-top: 32px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+}
+
+.detailPageHr {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.nftMedia {
+  width: 90%;
+  height: 40%;
+  max-height: 200px;
+  border-radius: 22px;
+}
