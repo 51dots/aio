@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/Marketplace.module.css";
 
 /**
@@ -25,33 +24,11 @@ const Marketplace: NextPage = () => {
                 </Link>
               </div>
           <div className={styles.heroAssetFrame}>
-            <Image
-              src="/hero-asset.png"
-              width={860}
-              height={540}
-              alt="Hero asset"
-              quality={100}
-              className={styles.heroAsset}
-            />
+            <img src="https://andromaverse.cloud/assets/images/hero-asset.png" width={860} height={540}/>
           </div>
-          <div className={styles.heroBodyContainer}>
-            <div className={styles.heroBody}>
-              <h1 className={styles.heroTitle}>
-                <span className={styles.heroTitleGradient}>
-                  Beta Viewing mode only.
-                </span>
-                <br />
-                Soon anon.
-              </h1>
-              <p className={styles.heroSubtitle}>
-              </p>
-
-
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 

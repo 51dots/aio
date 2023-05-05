@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 
@@ -9,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.navContainer}>
     {/* Now */}
-        <> <h2>Ready to Journey <img src="https://andromaverse.cloud/assets/images/alice.png" alt="alice" width={33} height={33} /> </h2></>
+        <> <h2>Villagers</h2></>
       <div className={styles.navBoxGrid}>
 
     {/* Mint */}
@@ -18,26 +17,56 @@ const Home: NextPage = () => {
           role="button"
           onClick={() => router.push(`/mint`)}
         >
-          <h2 className={styles.selectBoxTitle}>Mint</h2>
-          <img src="https://andromaverse.cloud/assets/images/mint.gif" alt="mint" width={88} height={88} />
+          <h1 className={styles.selectBoxTitle}>Mint</h1>
+          <img src="https://andromaverse.cloud/assets/images/mint.gif" alt="mint" width={111} height={111} />
           <p className={styles.selectBoxDescription}>
+          </p>
+        </div>
 
+           {/* Mint Probabilities */}
+           <div
+          className={styles.navBox}
+          role="button"
+          onClick={() => router.push(`/stats`)}
+        >
+         <h2 className={styles.selectBoxTitle}>Info</h2>
+          <img src="https://andromaverse.cloud/assets/images/lore.png" alt="stats" width={111} height={111} />
 
+          <p className={styles.selectBoxDescription}>
+ 
           </p>
         </div>
           {/* Staking */}
-        <div
+          <div
           className={styles.navBox}
           role="button"
           onClick={() => router.push(`/stake`)}
         >
 
           <h2 className={styles.selectBoxTitle}>Stake</h2>
-          <img src="https://andromaverse.cloud/assets/images/stake.gif" alt="stake" width={88} height={88} />
+          <img src="https://andromaverse.cloud/assets/images/Mnemosyne.png" alt="stake" width={111} height={111} />
           <p className={styles.selectBoxDescription}>
  
           </p>
         </div>
+
+          {/* Auctions */}
+          <div
+          className={styles.navBox}
+          role="button"
+          onClick={() => router.push(`./marketplace/auction`)}
+        >
+         <h2 className={styles.selectBoxTitle}>Auctions</h2>
+          <img src="https://andromaverse.cloud/assets/images/store.gif" alt="store" width={111} height={111} />
+
+          <p className={styles.selectBoxDescription}>
+          </p>
+        </div>
+
+    {/* Now */}
+    </div>
+    <> <h2>Now</h2></>
+      <div className={styles.navBoxGrid}>
     {/* Delegate */}
        <div
           className={styles.navBox}
@@ -45,7 +74,7 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/delegate`)}
         >
          <h2 className={styles.selectBoxTitle}>Delegate</h2>
-          <img src="https://andromaverse.cloud/assets/images/delegate.gif" alt="store" width={88} height={88} />
+          <img src="https://andromaverse.cloud/assets/images/stars.png" alt="store" width={88} height={88} />
 
           <p className={styles.selectBoxDescription}>
  
@@ -65,32 +94,53 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-   {/* Soon */}
-      </div>
-        <> <h2><img src="https://andromaverse.cloud/assets/images/guard.png" alt="alice" width={33} height={33} />  Currently for viewing purposes only! Listings Disabled. <img src="https://andromaverse.cloud/assets/images/guard.png" alt="alice" width={33} height={33} /> </h2></>
-      
-      <div className={styles.navBoxGrid}>
 
 
-  {/* Market */}
-        <div
+  {/* Game */}
+           <div
           className={styles.navBox}
           role="button"
-          onClick={() => router.push(`./marketplace`)}
+          onClick={() => router.push(`https://game.andromaverse.io`)}
         >
-         <h2 className={styles.selectBoxTitle}>Marketplace</h2>
-          <img src="https://andromaverse.cloud/assets/images/store.gif" alt="store" width={88} height={88} />
+          <h2 className={styles.selectBoxTitle}>Playtest</h2>
+          <img src="https://andromaverse.cloud/assets/images/game.gif" alt="game" width={88} height={88} />
 
           <p className={styles.selectBoxDescription}>
-          Beta view mode. Listings Disabled
+          </p>
+        </div>
+          {/* Lore */}
+          <div
+          className={styles.navBox}
+          role="button"
+          onClick={() => router.push(`/lore`)}
+        >
+         <h2 className={styles.selectBoxTitle}>Lore</h2>
+          <img src="https://andromaverse.cloud/assets/images/Mne.png" alt="lore" width={88} height={88} />
+
+          <p className={styles.selectBoxDescription}>
+ 
           </p>
         </div>
 
    {/* Soon */}
    </div>
-        <> <h2>Arriving Soon <img src="https://andromaverse.cloud/assets/images/ship.png" alt="ship" width={33} height={33} /> </h2></>
+        <> <h2> Wen? <img src="https://andromaverse.cloud/assets/images/Clock.png" alt="ship" width={33} height={33} /> </h2></>
       
       <div className={styles.navBoxGrid}>
+  {/* SGP */}
+  <div
+          className={styles.navBox}
+          role="button"
+          onClick={() => router.push(`https://www.stargaze.zone/marketplace/stars17s7emulfygjuk0xn906athk5e5efsdtumsat5n2nad7mtrg4xres3ysf3p`)}
+        >
+         <h2 className={styles.selectBoxTitle}>Ship</h2>
+          <img src="https://andromaverse.cloud/assets/images/FederationShip.png" alt="Ship" width={88} height={88} />
+
+          <p className={styles.selectBoxDescription}>
+ 
+          </p>
+        </div>
+
 
   {/* Merch */}
   <div
@@ -106,18 +156,6 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-   {/* Game */}
-        <div
-          className={styles.navBox}
-          role="button"
-          onClick={() => router.push(`/game`)}
-        >
-          <h2 className={styles.selectBoxTitle}>Game</h2>
-          <img src="https://andromaverse.cloud/assets/images/game.gif" alt="game" width={88} height={88} />
-
-          <p className={styles.selectBoxDescription}>
-          </p>
-        </div>
 
    {/* Docs */}
               <div
@@ -133,19 +171,7 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-  {/* Lore */}
-              <div
-          className={styles.navBox}
-          role="button"
-          onClick={() => router.push(`/lore`)}
-        >
-         <h2 className={styles.selectBoxTitle}>Lore</h2>
-          <img src="https://andromaverse.cloud/assets/images/lore.png" alt="lore" width={88} height={88} />
 
-          <p className={styles.selectBoxDescription}>
- 
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -9,6 +9,22 @@
   padding: 0 24px;
 }
 
+.navBox:hover {
+  background-color: rgba(255, 165, 0, 0.3); /* semi-transparent orange */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.navBox {
+  border-radius: 22px;
+  background-color: rgba(23, 0, 34, 0.365);
+  min-width: 200px;
+  margin: 7px;
+  height: square;
+  width: 20%;
+  padding: 40px;
+}
+
 .navContainer {
   margin-top: 150px;
 }
@@ -28,13 +44,13 @@
 
 .divider {
   width: 50%;
-  border-color: rgb(189, 98, 0);
+  border-color: rgb(189, 98, 0, 0.3);
   opacity: 0.25;
 }
 
 .smallDivider {
   width: 25%;
-  border-color: rgb(189, 98, 0);
+  border-color: rgb(189, 98, 0, 0.3);
   margin-top: 64px;
   opacity: 0.25;
 }
@@ -63,16 +79,6 @@
   flex-wrap: wrap; 
 }
 
-.navBox {
-  border-radius: 22px;
-  border: 1px solid #d78800;
-  min-width: 200px;
-  margin: 7px;
-  height: square;
-  width: 20%;
-  padding: 40px;
-}
-
 .nftBox {
   border-radius: 14px;
   border: 1px solid #ccc;
@@ -98,7 +104,7 @@
 }
 
 .selectBoxTitle {
-  font-size: 1.75rem;
+  font-size: 1.2rem;
   margin-top: 8px;
   margin-bottom: 8px;
 }

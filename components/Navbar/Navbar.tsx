@@ -15,11 +15,7 @@ export function Navbar() {
       <nav className={styles.nav}>
         <div className={styles.navLeft}>
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
-            <Image
-              src="/islesmoot.png"
-              width={99}
-              height={99}
-              alt="Smoot"
+            <img src="https://andromaverse.cloud/assets/images/isle.png" width={99} height={99} alt="Smoot"
             />
           </Link>
 
@@ -42,9 +38,9 @@ export function Navbar() {
           </div>
           {address && (
             <Link className={styles.link} href={`/profile/${address}`}>
-              <Image
-                className={styles.profileImage}
-                src="/user-icon.png"
+              <img src="https://andromaverse.cloud/assets/images/user-icon.png"
+               className={styles.profileImage}
+                
                 width={42}
                 height={42}
                 alt="Profile"

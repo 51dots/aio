@@ -14,7 +14,7 @@ return (
         <div
           className={styles.navBox}
           role="button"
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`https://game.andromaverse.io`)}
         >
              <h1 className={styles.h1}>Soon</h1>
           <img src="https://andromaverse.cloud/assets/images/home.gif" alt="home" width={64} height={64} />

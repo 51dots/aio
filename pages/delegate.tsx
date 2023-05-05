@@ -24,19 +24,7 @@ return (
             Back Home
       </p>
         </div>
-        <div
-          className={styles.navBox}
-          role="button"
-          onClick={() => router.push(`https://wallet.keplr.app/chains/stargaze?modal=validator&chain=stargaze-1&validator_address=starsvaloper1jtjld0gnn4np74m6c6qn8xcazzvc2j9mnp0wxg&referral=true`)}
-        >
-             <h1 className={styles.h1}>Osmo</h1>
-          <img src="https://andromaverse.cloud/assets/images/osmo.png" alt="osmo" width={88} height={88} />
-          <p className={styles.selectBoxDescription}>
-          </p>
-          <p className={styles.explain}>
-      Delegate
-      </p>
-        </div> <div
+ <div
           className={styles.navBox}
           role="button"
           onClick={() => router.push(`https://wallet.keplr.app/chains/stargaze?modal=validator&chain=stargaze-1&validator_address=starsvaloper1jtjld0gnn4np74m6c6qn8xcazzvc2j9mnp0wxg&referral=true`)}

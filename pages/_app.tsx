@@ -2,7 +2,6 @@ import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
-import Header from "../components/Header/Header";
 import Head from "next/head";
 import "../styles/globals.css";
 
